@@ -87,20 +87,21 @@
 
 .social li {
     list-style: none;
+    width: 100px;
 }
 
 .social li a {
     display: inline-block;
     filter: invert(1);
-    margin-left: 40px;
+    margin-left: 10px;
     transform: scale(2.5);
     transition: 0.5s;
-    width: 50px;
+    max-width: 10px;
     color: black;
 }
 
 .social li a:hover {
-    transform: scale(2) translateY(-15px);
+    transform: scale(3)
 }
 
 .container {
