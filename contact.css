@@ -73,7 +73,6 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
 }
-
 .showcase video {
     position: absolute;
     top: 0;
@@ -85,14 +84,14 @@ a:hover {
     opacity: 0.8;
 }
 .logo {
-    font-family: 'Press Start 2P', cursive;
-    line-height: 25px;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 25px;
 }
 
 .logo span {
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body{
@@ -107,6 +106,10 @@ body{
   background-size: 4%;
   height: 100vh;
   width: 100%;
+}
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
 }
 .section-center{
   position: absolute;
