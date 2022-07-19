@@ -348,3 +348,14 @@ body{
     font-size: 8vh;
   }
 }
+
+@media screen and (max-width: 769px) {
+  .nav ul li a{
+    font-size: 6vh;
+  }
+}
+@media screen and (max-width: 520px) {
+  .nav ul li a{
+    font-size: 4vh;
+  }
+}
