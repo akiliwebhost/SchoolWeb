@@ -456,3 +456,8 @@ body{
         margin-bottom: 30px;
     }
   }
+  @media screen and (max-width: 628px){
+    .showcase video {
+      display: none;
+    }
+  }
