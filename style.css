@@ -598,6 +598,9 @@ body{
 .menu-icon:checked ~ .nav ul li:nth-child(4){
   transition-delay: 1640ms;
 }
+.menu-icon:checked ~ .nav ul li:nth-child(5){
+  transition-delay: 1720ms;
+}
 
 
 @media screen and (max-width: 991px) {
@@ -621,5 +624,14 @@ body{
 @media screen and (max-width: 520px) {
   .nav ul li a{
     font-size: 4vh;
+  }
+}
+@media screen and (max-width: 419px) {
+  .title h1 {
+    white-space: nowrap;
+    font-size: 3vh;
+  }
+  .role p {
+    font-size: 15px;
   }
 }
