@@ -334,18 +334,16 @@ body{
 body
 {
     overflow-x: hidden;
-    
+    height: 20px;
 }
 .showcases
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    padding: 50px;
     width: 100%;
     margin-bottom: 100px;
-
 }
 
 .container
@@ -512,4 +510,9 @@ nav{
     display: block;
     margin: auto;
 }
-
+@media screen and (max-width: 359px){
+  .showcases {
+    position: relative;
+    right: 50px;
+  }
+}
