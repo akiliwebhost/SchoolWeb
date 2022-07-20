@@ -5,9 +5,6 @@ html,body {
     color: #aaa;
     transition: 0.5s;
 }
-:root{
-    --main-color: rgb(255, 251, 0);
-}
 p {
     margin: 1.5em 0;
     color: #aaa;

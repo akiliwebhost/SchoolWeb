@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Potta+One&family=Press+Start+2P&display=swap');
-
+html,body {
+  padding: 0 1em;
+  font-size: 19px;
+  color: #aaa;
+  transition: 0.5s;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #000;
+
     color: #fff;
 
     transition: 0.5s
