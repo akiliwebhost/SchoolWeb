@@ -338,11 +338,11 @@ body{
     border-radius: 20px;
     outline: none;
     margin-top: 30px;
-    
+    cursor: pointer;
   }
   
   .card {
-    width: 200px;
+    max-width: 100px;
     height: 230px;
     display: inline-block;
     border-radius: 10px;
@@ -355,54 +355,64 @@ body{
     transition: transform 0.5s;
     font-size: 0;
   }
-  .card p {
-    font-size: 0;
-  }
-
-  .card1{
-    background-image: url(imgs/I\ was\ in\ your\ care.png);
-    background-size: 299px;
-    background-position: -42px 2px;
-    background-repeat: no-repeat;
-  }
-
-  .card2{
-    background-image: url(imgs/Izzy4ever.png);
-    background-size: 299px;
-    background-position: -21px 4px;
-    background-repeat: no-repeat;
-  }
-
-  .card3{
-    background-image: url(imgs/My\ Family\ Deserves\ Answers.png);
-    background-size: 299px;
-    background-position: -42px 4px;
-    background-repeat: no-repeat;
-  }
-
-  .card4{
-    background-image: url(imgs/What\ happend\ to\ our\ baby.png);
-    background-size: 299px;
-    background-position: -22px 4px;
-    background-repeat: no-repeat;
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
     
-  }
-  .card5{
-    background-image: url(imgs/Where\ is\ your\ heart\ II.png);
-    background-size: 299px;
-    background-position: -55px 4px;
-    background-repeat: no-repeat;
-    
-  }
-  .card6{
-    background-image: url(imgs/WWLD.png);
-    background-size: 299px;
-    background-position: -42px 4px;
-    background-repeat: no-repeat;
-    
-  }
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.gallery__item--7 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
 
-  .card:hover{
+
+  .gallery__img:hover{
     transform: translateY(-10px);
   }
 
