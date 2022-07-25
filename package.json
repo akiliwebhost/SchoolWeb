@@ -1,0 +1,22 @@
+{
+  "name": "schoolweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EruditeBoen/SchoolWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EruditeBoen/SchoolWeb/issues"
+  },
+  "homepage": "https://github.com/EruditeBoen/SchoolWeb#readme",
+  "dependencies": {
+    "mysql2": "^2.3.3"
+  }
+}
