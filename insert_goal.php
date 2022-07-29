@@ -2,13 +2,14 @@
 require_once 'connect.php';
 
 $text = $_REQUEST['text'];
+$text2 = $_REQUEST['text2'];
 $date = $_REQUEST['goaldate'];
-$complete = $_REQUEST['complete'];
 
 
-$sql = "INSERT INTO goals (goal_category, goal_text, goal_date, goal_complete) VALUES ";
-$sql .= "'" . $text . "',";
-$sql .=  "'" . $date . "',";
+$sql = "INSERT INTO signatures (full_name, Email, goal_date) VALUES ";
+$sql .= "('" . $text . "',";
+$sql .= "'" . $text2 . "',";
+$sql .=  "'" . $date . "')";
 
 
 //print $sql;

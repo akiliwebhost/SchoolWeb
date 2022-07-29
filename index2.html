@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="http://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="http://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
     <link rel="stylesheet" href="goals.css" />
-    <link rel="stylesheet" href="petition.css"/>
     <title>Petition Page</title>
   </head>
   <body>
-  <section class="showcase">  
+  <section class="showcase">
 
         <header>
             <h2 class="logo">Akili Institute<br><span>School of Excellence</span></h2>
@@ -33,12 +32,12 @@
         <video src="Math Formula Science Equation Symbols Written on Chalkboard Moving 4K Motion Wallpaper Background.mp4" muted loop autoplay></video>
 
     </section>
-    <div class="container">
-      <h1>Petition</h1>
+    <div id="container">
+      <h1>Sign The Petition</h1>
       <form action="insert_goal.php" method="post">
           <label for="text">Full Name</label>
           <textarea name="text" id="text"></textarea>
-          <label for="text2">Email</label>
+          <label for="text2">email</label>
           <textarea name="text2" id="text2"></textarea>
           <label for="goaldate">Date</label>
           <input type="date" id="goaldate" name="goaldate" />
@@ -47,16 +46,16 @@
       </form>
       <?php
       require_once 'connect.php';
-      $sql = "SELECT * FROM signatures";
+      $sql = "SELECT * FROM goals";
       $result = mysqli_query($link, $sql) or die(mysqli_error($link));
-      $num = mysqli_num_rows($result);
-      #print("<h2>Incomplete Goals</h2>");
+      $num=mysqli_num_fields($query);
+      print("<h2>Incomplete Goals</h2>");
 
       echo "<div class='num_of_signatures'>";
-      echo "<p> Number of Signatures ";
-      echo $num;
-      echo "!";
-      echo "</p>";
+      echo "<p> Number of Signatures "
+      echo $num
+      echo "!"
+      echo "</p>"
 
       //Incomplete Goals
       // while($row = mysqli_fetch_array($result)){

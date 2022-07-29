@@ -2,7 +2,6 @@
 html,body {
   font-family: sans-serif;
   padding: 0 1em;
-  font-size: 19px;
   color: #aaa;
   overflow: hidden;
   transition: 0.5s;
@@ -17,6 +16,7 @@ html,body {
 .logo {
   font-family: 'Press Start 2P', cursive;
   line-height: 25px;
+  font-size: 25px
 }
 .logo span {
   font-size: 15px;
@@ -37,7 +37,17 @@ html,body {
   overflow: hidden;
   transition: 0.5s
 }
-
+.container {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);  
+  text-align: center;
+  left: 18%;
+  right: 50%;
+  
+}
 .showcase.active {
   right: 300px;
 }
@@ -46,7 +56,6 @@ html,body {
   text-transform: uppercase;
   cursor: pointer;
 }
-
 .showcase header {
   position: absolute;
   top: 0;

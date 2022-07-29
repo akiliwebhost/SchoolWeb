@@ -11,7 +11,7 @@ const insertIntoDb = async () => {
 
     try {
         await connection.query(
-            "INSERT INTO greatest_basketball_player_ever (player_name, team) VALUES ('Lebron James', 'Lakers')"
+            "INSERT INTO signatures (full_name, Email, goal_date) VALUES ('Bishop', 'Bishop@akiliuniverse.org,', '5/21/2005')"
         );
 
         console.log("inserted");
